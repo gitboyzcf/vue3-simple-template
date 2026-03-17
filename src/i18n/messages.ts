@@ -1,0 +1,78 @@
+export const messages = {
+  zh: {
+    app: {
+      title: 'Vue 3 简易模板',
+      navHome: '首页',
+      navAbout: '关于',
+      language: '语言',
+      theme: '主题',
+      system: '跟随系统',
+      light: '浅色',
+      dark: '深色',
+    },
+    home: {
+      ready: '项目已就绪',
+      stack: '当前技术栈',
+      modules: '扩展能力',
+      increment: 'Pinia 计数 +1',
+      count: '计数',
+      discreteDemo: '离散 API 示例',
+      showMessage: '显示消息',
+      showModal: '显示弹窗',
+      showNotification: '显示通知',
+      iconDemo: '图标示例（Iconify + Naive UI + Tailwind）',
+      iconifyDemo: 'Iconify 图标',
+      naiveIconDemo: 'Naive UI 图标',
+      iconClassDemo: '类名图标（Tailwind）',
+    },
+    about: {
+      title: '关于',
+      description: '这是一个可直接扩展的 Vue 3 工程基础模板。',
+    },
+    discrete: {
+      confirm: '确认',
+      cancel: '取消',
+      notificationContent: '这是一条示例通知',
+      notificationMeta: '你可以在项目中按业务替换这段文案',
+    },
+  },
+  en: {
+    app: {
+      title: 'Vue 3 Simple template',
+      navHome: 'Home',
+      navAbout: 'About',
+      language: 'Language',
+      theme: 'Theme',
+      system: 'System',
+      light: 'Light',
+      dark: 'Dark',
+    },
+    home: {
+      ready: 'Project Ready',
+      stack: 'Core stack',
+      modules: 'Extensions',
+      increment: 'Pinia count +1',
+      count: 'Count',
+      discreteDemo: 'Discrete API Demo',
+      showMessage: 'Show Message',
+      showModal: 'Show Modal',
+      showNotification: 'Show Notification',
+      iconDemo: 'Icon Demo (Iconify + Naive UI + Tailwind)',
+      iconifyDemo: 'Iconify Icons',
+      naiveIconDemo: 'Naive UI Icons',
+      iconClassDemo: 'Class-based icons (Tailwind)',
+    },
+    about: {
+      title: 'About',
+      description: 'This is a scalable starter template for Vue 3 projects.',
+    },
+    discrete: {
+      confirm: 'Confirm',
+      cancel: 'Cancel',
+      notificationContent: 'This is a sample notification',
+      notificationMeta: 'You can replace this text with business content',
+    },
+  },
+} as const
+
+export type AppLocale = keyof typeof messages
