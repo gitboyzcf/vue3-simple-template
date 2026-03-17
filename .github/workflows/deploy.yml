@@ -6,10 +6,10 @@ run-name: Deploy by @${{ github.actor }}
 
 # 触发部署的条件
 on:
-  # 每当 push 到 master 分支时触发部署
+  # 每当 push 到 pages 分支时触发部署
   push:
     branches:
-      - master
+      - pages
 
 permissions:
   contents: read
@@ -29,7 +29,7 @@ jobs:
           version: 9
       - uses: actions/setup-node@v4
         with:
-          node-version: '22.12.0'
+          node-version: '22.13.0'
           cache: 'pnpm'
 
       - name: install
