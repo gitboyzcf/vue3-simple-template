@@ -24,16 +24,16 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-      - uses: pnpm/action-setup@v2
+      - uses: pnpm/action-setup@v4
         with:
-          version: 6.32.9
+          version: 9
       - uses: actions/setup-node@v4
         with:
-          node-version: '22'
+          node-version: '22.12.0'
           cache: 'pnpm'
 
       - name: install
-        run: pnpm install
+        run: pnpm install --frozen-lockfile
 
       - name: Run Build Script
         run: pnpm build
