@@ -4,7 +4,7 @@
 
 📦开箱即用
 
-![结果](./public/image.png)
+<img src="./public/image.png" />
 
 ## 环境要求
 
